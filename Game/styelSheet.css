@@ -197,7 +197,10 @@ body {
     padding-bottom: 25px;
     border: 20px solid hsl(230, 89%, 62%);
     box-shadow: inset 0px 5px 0px 2px #b8c0d0,
-    0px 4px 2px 3px #2f44bb;
+    0px 4px 2px 3px #2f44bb,
+    0px 0px 0px 0px #606e853b,
+    0px 0px 0px 0px #606e8526,
+    0px 0px 0px 0px #606e851f;
     background-color: #e3e3e4;
 }
 
@@ -208,7 +211,10 @@ body {
     padding-bottom: 40px;
     border: 20px solid  hsl(349, 71%, 52%);
     box-shadow: inset 0px 5px 0px 2px #b8c0d0,
-    0px 4px 2px 3px #9e1634;
+    0px 4px 2px 3px #9e1634,
+    0px 0px 0px 0px #606e853b,
+    0px 0px 0px 0px #606e8526,
+    0px 0px 0px 0px #606e851f;
     background-color: #e3e3e4;
     
 }
@@ -220,7 +226,10 @@ body {
     padding-bottom: 30px;
     border: 20px solid  hsl(39, 89%, 49%);
     box-shadow: inset 0px 5px 0px 2px #b8c0d0,
-    0px 4px 2px 3px #bf6b29;
+    0px 4px 2px 3px #bf6b29,
+    0px 0px 0px 0px #606e853b,
+    0px 0px 0px 0px #606e8526,
+    0px 0px 0px 0px #606e851f;
     background-color: #e3e3e4;
 }
 
@@ -260,11 +269,6 @@ body {
 
 .parent .match-section .play-again button:hover {
     color: #e33454;
-}
-
-.Box-Sahdow {
-    box-shadow: 0px 0px 0px 40px #606e853b, 0px 0px 0px 80px #606e8526, 0px 0px 0px 120px #606e851f;
-    transition: 1s;
 }
 
 /* End Select Section */
@@ -335,31 +339,6 @@ body {
 .rules-img img {
     margin-top: 40px;
 }
-
-.shadow-one {
-    box-shadow: 0px 0px 0px 0px #606e853b, 0px 0px 0px 0px #606e8526, 0px 0px 0px 0px #606e851f;
-    position: absolute;
-    border-radius: 100px;
-    padding: 40px;
-    bottom: 50px;
-    z-index: -2;
-    left: 70px;
-}
-
-.shadow-two {
-    box-shadow: 0px 0px 0px 0px #606e853b, 0px 0px 0px 0px #606e8526, 0px 0px 0px 0px #606e851f;
-    border-radius: 100px;
-    padding: 40px;
-    position: absolute;
-    bottom: 54px;
-    z-index: -5;
-    right: 190px;
-}
-
-/* box-shadow:0px 0px 0px 100px #606e853b, 0px 0px 0px 150px #606e8526, 0px 0px 0px 200px #606e851f; */
-
-
-
 /* Rules Button */
 /* Front-End Menetor */
 .attribution { 

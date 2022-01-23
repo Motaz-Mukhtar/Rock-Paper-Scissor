@@ -248,6 +248,16 @@ hands.forEach((ele) => {
 
 playAgainButton.addEventListener("click", function () {
   key = true;
+  newDiv.style.cssText = `
+    box-shadow: 0px 0px 0px 0px #606e853b,
+    0px 0px 0px 0px #606e8526,
+    0px 0px 0px 0px #606e851f;
+  `;
+  selectONE.style.cssText = `
+    box-shadow: 0px 0px 0px 0px #606e853b,
+    0px 0px 0px 0px #606e8526,
+    0px 0px 0px 0px #606e851f;
+  `;
   matchSection.style.opacity = "0";
   setTimeout(function () {
     matchSection.style.display = "none";
