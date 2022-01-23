@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main CSS File-->
+    <link rel="stylesheet" href="styelSheet.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&family=Dongle&display=swap" rel="stylesheet">
+    <title>rock</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="score-section">
+            <div class="logo">
+                <img src="../rock-paper-scissors-master/images/logo.svg" alt="">
+            </div>
+            <div class="score-box">
+                <h2>SCORE</h2>
+                <span class="score">0</span>
+            </div>
+        </div>
+        <div class="hand-section">
+            <div class="paper-scissors">
+                <svg width="519" height="302" style="position: fixed; z-index: -1;" class="svg">
+                    <line x1="150" y1="250" x2="30" y2="60" style="
+                    stroke:#14203a;
+                    stroke-linecap:round;
+                    stroke-width: 13;
+                    "></line>
+                    <line x1="20" y1="85" x2="300" y2="85" style="
+                    stroke:#14203a;
+                    stroke-linecap:round;
+                    stroke-width: 13;
+                    "></line>
+                    <line x1="40" y1="450" x2="330" y2="60" style="
+                    stroke:#14203a;
+                    stroke-linecap:round;
+                    stroke-width: 13;
+                    "></line>
+                </svg>
+                <div class="paper paper-color">
+                    <img src="../rock-paper-scissors-master/images/icon-paper.svg" class="game" alt="Paper">
+                </div>
+                <div class="scissors scissors-color">
+                    <img src="../rock-paper-scissors-master/images/icon-scissors.svg" class="game" alt="Rock">
+                </div>
+            </div>
+            <div class="rock rock-color">
+                <img src="../rock-paper-scissors-master/images/icon-rock.svg" class="game" alt="Scissors">
+            </div>
+        </div>
+        <!-- ################################################################# -->
+        <div class="match-section">
+            <div class="select-box">
+                <p class="text-one">YOU PICKED</p>
+                <div class="select-one">
+                    <img src="" class="player" alt="selctionOne">
+                </div>
+            </div>
+            <!-- ######### -->
+            <div class="play-again">
+                <h1 class="result">YOU LOSE</h1>
+                <button class="play-again-button">PLAY AGAIN</button>
+            </div>
+            <!-- ######### -->
+            <div class="computer-select">
+                <p class="text-two">THE HOUSE PICKED</p>
+                <div class="select-two" alt="selctionTwo">
+                </div>
+            </div>
+        </div>
+        <div class="rules-img">
+            <i class="fas fa-times cross"></i>
+            <h1>RULES</h1>
+            <img src="../rock-paper-scissors-master/images/image-rules.svg" alt="">
+        </div>
+        <!-- ######################################################################### -->
+        <div class="rules-modal">
+            <button class="Rules-button">RULES</button>
+        </div>
+    </div>
+    <div class="dark-background"> </div>
+    <script src="main.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6d2d60355e.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+body {
+    background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%)); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    transition: 1s;
+    user-select: none;
+}
+
+.parent {
+    position: relative;
+    width: 700px;
+    margin: 20px auto;
+}
+/* Start Score Section */
+.parent .score-section {
+    display: flex;
+    justify-content: space-between;
+    border: 3px hsl(217, 16%, 45%) solid;
+    border-radius: 15px;
+    padding: 15px 25px;
+    margin: 0px 40px;
+}
+
+.parent .score-section .logo {
+    margin-top: 8px;
+}
+
+.parent .score-section .logo img {
+    width: 150px;
+}
+
+.parent .score-section .score-box {
+    background-color: #f9f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px 45px;
+}
+
+.parent .score-section .score-box h2{
+    color: hsl(229, 64%, 46%);
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.parent .score-section .score-box span{
+    color: hsl(229, 25%, 31%);
+    font-size: 70px;
+    height: 0px;
+    font-weight: 700;
+}
+
+/* End Score Section */
+/* ####################################################### */
+/* Start Select Section */
+.parent .hand-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.parent .hand-section .game {
+    width: 60px;
+}
+
+.parent .hand-section .paper-scissors {
+    margin-bottom: 30px;
+}
+
+/* paper */
+.parent .hand-section .paper-scissors .paper {
+    display: inline-block;
+    width: fit-content;
+    padding: 35px;
+    padding-bottom: 25px;
+    transform: translateX(-35px);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+ .paper-color {
+    display: inline-block;
+    width: fit-content;
+    padding: 40px;
+    padding-bottom: 25px;
+    border-radius: 200px;
+    border: 20px solid hsl(230, 89%, 62%);
+    box-shadow: inset 0px 5px 0px 2px #b8c0d0,
+    0px 4px 2px 3px #2f44bb;
+    background-color: #e3e3e4;
+}
+
+/* Scessior */
+.parent .hand-section .paper-scissors .scissors {
+    display: inline-block;
+    width: fit-content;
+    padding: 35px;
+    padding-bottom: 25px;
+    transform: translateX(35px);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.scissors-color {
+    display: inline-block;
+    width: fit-content;
+    padding: 40px;
+    padding-bottom: 30px;
+    border-radius: 200px;
+    border: 20px solid  hsl(39, 89%, 49%);
+    box-shadow: inset 0px 5px 0px 2px #b8c0d0,
+    0px 4px 2px 3px #bf6b29;
+    background-color: #e3e3e4;
+}
+
+/* Rock */
+.parent .hand-section .rock {
+    display: inline-block;
+    width: fit-content;
+    margin: auto;
+    border-radius: 100px;
+    padding: 35px;
+    text-align: center;
+    cursor: pointer;
+    padding-bottom: 30px;
+}
+
+.rock-color {
+    border: 20px solid  hsl(349, 71%, 52%);
+    box-shadow: inset 0px 5px 0px 2px #b8c0d0,
+    0px 4px 2px 3px #9e1634;
+    background-color: #e3e3e4;
+    display: inline-block;
+    width: fit-content;
+    padding: 45px;
+    padding-bottom: 40px;
+    border-radius: 200px;
+}
+
+/* ############################################################## */
+
+.parent .match-section {
+    margin-top: 50px;
+    display: none;
+    justify-content: space-evenly;
+}
+
+.parent .select-box {
+    margin-left: 100px;
+    text-align: center;
+}
+
+.parent .select-box .text-one {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.parent .select-box .select-one img {
+    width: 70px;
+}
+
+.parent .computer-select {
+    margin-right: 100px;
+    text-align: center;
+}
+
+.parent .computer-select .text-two {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.parent .computer-select .select-two {
+    display: inline-block;
+    background-color: #14203a;
+    padding: 95px;
+    padding-bottom: 90px;
+    border-radius: 100px;
+    width: fit-content;
+}
+
+.active-paper {
+    border-radius: 100px;
+    width: fit-content;
+    padding: 40px;
+    padding-bottom: 25px;
+    border: 20px solid hsl(230, 89%, 62%);
+    box-shadow: inset 0px 5px 0px 2px #b8c0d0,
+    0px 4px 2px 3px #2f44bb;
+    background-color: #e3e3e4;
+}
+
+.active-rock {
+    border-radius: 100px;
+    width: fit-content;
+    padding: 45px;
+    padding-bottom: 40px;
+    border: 20px solid  hsl(349, 71%, 52%);
+    box-shadow: inset 0px 5px 0px 2px #b8c0d0,
+    0px 4px 2px 3px #9e1634;
+    background-color: #e3e3e4;
+    
+}
+
+.active-scissors {
+    border-radius: 100px;
+    width: fit-content;
+    padding: 40px;
+    padding-bottom: 30px;
+    border: 20px solid  hsl(39, 89%, 49%);
+    box-shadow: inset 0px 5px 0px 2px #b8c0d0,
+    0px 4px 2px 3px #bf6b29;
+    background-color: #e3e3e4;
+}
+
+.active-paper img, 
+.active-rock img,
+.active-scissors img
+{
+    width: 70px;
+}
+
+/* ##################################### */
+
+.parent .match-section .play-again {
+    text-align: center;
+    margin: 0px 20px;
+    opacity: 0;
+}
+
+.parent .match-section .play-again h1 {
+    transform: translateY(80px);
+    /* font-size: 60px; */
+    font-size: 0px;
+    /* letter-spacing: 1px; */
+}
+
+.parent .match-section .play-again button {
+    outline: none;
+    border: none;
+    transform: translateY(70px);
+    padding: 0px;
+    font-size: 0px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 700;
+}
+
+.parent .match-section .play-again button:hover {
+    color: #e33454;
+}
+
+.Box-Sahdow {
+    box-shadow: 0px 0px 0px 40px #606e853b, 0px 0px 0px 80px #606e8526, 0px 0px 0px 120px #606e851f;
+    transition: 1s;
+}
+
+/* End Select Section */
+/* Rules Button */
+
+.rules-modal {
+    position: fixed;
+    right: 140px;
+    bottom: 50px;
+}
+
+.rules-modal button {
+    color: #f9f9f9;
+    background-color: transparent;
+    padding: 10px 35px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border: 2px hsl(217, 16%, 45%) solid;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rules-modal button:hover {
+    border-color: white;
+}
+
+.rules-img {
+    display: none;
+    width: fit-content;
+    transform: translate(60%, -40%);
+    bottom: 0px;
+    background-color: #f9f9f9;
+    position: fixed;
+    text-align: center;
+    padding: 25px;
+    margin: -50px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.dark-background {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 50%);
+}
+
+.rules-img h1 {
+    color: hsl(229, 25%, 31%);
+    text-align: left;
+}
+
+.rules-img .cross {
+    font-size: 30px;
+    color: #b1b4c5;
+    text-align: right;
+    position: absolute;
+    right: 40px;
+    top: 32px;
+    cursor: pointer;
+}
+
+.rules-img img {
+    margin-top: 40px;
+}
+
+.shadow-one {
+    box-shadow: 0px 0px 0px 0px #606e853b, 0px 0px 0px 0px #606e8526, 0px 0px 0px 0px #606e851f;
+    position: absolute;
+    border-radius: 100px;
+    padding: 40px;
+    bottom: 50px;
+    z-index: -2;
+    left: 70px;
+}
+
+.shadow-two {
+    box-shadow: 0px 0px 0px 0px #606e853b, 0px 0px 0px 0px #606e8526, 0px 0px 0px 0px #606e851f;
+    border-radius: 100px;
+    padding: 40px;
+    position: absolute;
+    bottom: 54px;
+    z-index: -5;
+    right: 190px;
+}
+
+/* box-shadow:0px 0px 0px 100px #606e853b, 0px 0px 0px 150px #606e8526, 0px 0px 0px 200px #606e851f; */
+
+
+
+/* Rules Button */
+/* Front-End Menetor */
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
