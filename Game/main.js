@@ -20,7 +20,11 @@ let paper = document.querySelector(".paper"),
 
 console.log(score);
 Number(score);
-score.innerHTML = window.localStorage.getItem("theScore");
+if (window.localStorage.getItem("theScore") == undefined) {
+  score.innerHTML = 0;
+} else {
+  score.innerHTML = window.localStorage.getItem("theScore");
+}
 
 hands.forEach((ele) => {
   ele.addEventListener("click", function () {
